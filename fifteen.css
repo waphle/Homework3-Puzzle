@@ -28,7 +28,7 @@ body p {
 }
 
 .puzzlepiece {
-  background-image: url(zelda.jpg);
+  background-image: url(background.jpg);
 	border: 5px solid black;
 	height: 90px;
   width: 90px;
