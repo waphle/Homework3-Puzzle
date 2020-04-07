@@ -1,0 +1,26 @@
+body {
+  height: 100%;
+  font-family: cursive;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+}
+
+body p {
+  text-align: center;
+  margin: auto;
+}
+
+#puzzlearea {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+#shufflebutton {
+  display: block;
+  margin: 10px auto;
+}
