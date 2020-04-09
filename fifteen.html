@@ -20,7 +20,7 @@
 			How quickly can you solve it?
 		</p>
 
-		<div id="puzzlearea">
+		<div id="puzzlearea" onload="initializeGame">
 			<div class="puzzlepiece" id="one">1</div> <!-- id and class in same div for easier css-->
 	    <div class="puzzlepiece" id="two">2</div>
 	    <div class="puzzlepiece" id="three">3</div>
@@ -40,7 +40,7 @@
 		</div>
 
 		<p id="controls">
-			<button id="shufflebutton">Shuffle</button>
+			<button id="shufflebutton" onclick="shuffleBoard()">Shuffle</button>
 		</p>
 
 		<div id="output"></div>

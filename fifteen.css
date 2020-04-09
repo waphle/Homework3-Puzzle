@@ -14,8 +14,7 @@ body p {
 }
 
 #puzzlearea {
-  text-align: center;
-  margin: auto;
+  margin: 15px auto;
   width: 400px;
   height: 400px;
   position: relative;
@@ -32,7 +31,13 @@ body p {
   font-size: 40px;
   color: black;
   line-height: 100px;
-  text-shadow: 1px 5px 10px white; /* background highlight to make numbers more easy to see */
+  text-shadow: 1px 2px 5px white; /* background highlight to make numbers more easy to see */
+}
+
+#shufflebutton {
+  display: block;
+  margin: 15px auto;
+  font-family: cursive;
 }
 
 /* The following is to divide the image into even pieces and to display them to their corresponding puzzle piece */
@@ -82,11 +87,51 @@ body p {
   background-position: -200px -300px;
 }
 #sixteen {
-  border: 2px solid white !important;
+  border: 5px solid white !important; /* 5px border as well */
 }
 
-#shufflebutton {
-  display: block;
-  margin: 10px auto;
-  font-family: cursive;
+.clickable {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.clickable:hover {
+    border-color: red;
+    color: #006600;
+    cursor: pointer;
+}
+
+.animate-up {
+    -webkit-transform: translate(0, -100px);
+    -moz-transform: translate(0, -100px);
+    -ms-transform: translate(0, -100px);
+    -o-transform: translate(0, -100px);
+    transform: translate(0, -100px);
+}
+
+.animate-down {
+    -webkit-transform: translate(0, 100px);
+    -moz-transform: translate(0, 100px);
+    -ms-transform: translate(0, 100px);
+    -o-transform: translate(0, 100px);
+    transform: translate(0, 100px);
+}
+
+.animate-left {
+    -webkit-transform: translate(-100px, 0);
+    -moz-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    -o-transform: translate(-100px, 0);
+    transform: translate(-100px, 0);
+}
+
+.animate-right {
+    -webkit-transform: translate(100px, 0);
+    -moz-transform: translate(100px, 0);
+    -ms-transform: translate(100px, 0);
+    -o-transform: translate(100px, 0);
+    transform: translate(100px, 0);
 }
