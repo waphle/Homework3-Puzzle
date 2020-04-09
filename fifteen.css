@@ -16,27 +16,26 @@ body p {
 #puzzlearea {
   text-align: center;
   margin: auto;
-  padding: 15px;
   width: 400px;
   height: 400px;
   position: relative;
 }
 
-/* 5px borders take up 10 px total, so the image will take up 90px by 90px */
 .puzzlepiece {
   background-image: url(background.jpg);
   width: 90px;
   height: 90px;
   float: left;
   text-align: center;
-  border: 5px black solid;
+  border: 5px black solid; /* 5px borders take up 10 px total, so the image will take up 90px by 90px */
   vertical-align: middle;
   font-size: 40px;
   color: black;
   line-height: 100px;
-  text-shadow: 1px 5px 10px white;
+  text-shadow: 1px 5px 10px white; /* background highlight to make numbers more easy to see */
 }
 
+/* The following is to divide the image into even pieces and to display them to their corresponding puzzle piece */
 #one {
   background-position: 0 0;
 }
