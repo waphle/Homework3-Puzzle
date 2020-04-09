@@ -39,27 +39,12 @@ function start() {
 
   document.getElementById(background[background_id]).selected = true;
 
-  for (var i = 0; i < ids.length - 1; i++) {
-    document.getElementById(ids[i]).className = "puzzlepiece " + background[background_id];
-  }
-}
-
-function displayBoard() {
-  document.getElementById("puzzlearea").innerHTML = "";
-
-  for (var i = 0; i < shuffled.length; i++) {
-    if (shuffled[i] == "") {
-      document.getElementById("puzzlearea").innerHTML += '<div id="sixteen" class="puzzlepiece"></div>';
-    }
-    else {
-      var id_name = shuffled[i];
-      document.getElementById("puzzlearea").innerHTML += '<div id="' + shuffled[i] + '" class="puzzlepiece' + " " + backgroundImgLink + '">' + ids_numeric[id_name] + '</div>';
-    }
+  for (var i = 0; i < id.length - 1; i++) {
+    document.getElementById(id[i]).className = "puzzlepiece " + background[background_id];
   }
 }
 
 var shuffled = id.slice();
-
 function shuffle() {
   shuffled = id.slice();
   var pieces = 15;
@@ -95,4 +80,18 @@ function shuffle() {
     pieces = move_to;
   }
   displayBoard();
+}
+
+function displayBoard() {
+  document.getElementById("puzzlearea").innerHTML = "";
+
+  for (var i = 0; i < shuffled.length; i++) {
+    if (shuffled[i] == "") {
+      document.getElementById("puzzlearea").innerHTML += '<div id="sixteen" class="puzzlepiece"></div>';
+    }
+    else {
+      var id_name = shuffled[i];
+      document.getElementById("puzzlearea").innerHTML += '<div id="' + shuffled[i] + '" class="puzzlepiece' + " " + backgroundImgLink + '">' + id_numeric[id_name] + '</div>';
+    }
+  }
 }
