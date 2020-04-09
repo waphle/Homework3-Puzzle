@@ -1,11 +1,11 @@
-var ids = [
+var id = [
     "one",      "two",      "three",   "four",
     "five",     "six",      "seven",   "eight",
     "nine",     "ten",      "eleven",  "twelve",
     "thirteen", "fourteen", "fifteen", ""
 ];
 
-var ids_numeric = {
+var id_numeric = {
     "one":1,       "two":2,       "three":3,    "four":4,
     "five":5,      "six":6,       "seven":7,    "eight":8,
     "nine":9,      "ten":10,      "eleven":11,  "twelve":12,
@@ -58,10 +58,10 @@ function displayBoard() {
   }
 }
 
-var shuffled = ids.slice();
+var shuffled = id.slice();
 
 function shuffle() {
-  shuffled = ids.slice();
+  shuffled = id.slice();
   var pieces = 15;
 
   for (var i = 0; i < 100; i++) {
