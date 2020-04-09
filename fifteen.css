@@ -14,32 +14,27 @@ body p {
 }
 
 #puzzlearea {
-  font-size: 40px;
+  text-align: center;
   margin: auto;
+  padding: 15px;
   width: 400px;
   height: 400px;
   position: relative;
 }
 
-#boardSpace {
-	margin-left: auto;
-	margin-right: auto;
-  width: 400px;
-}
-
+/* 5px borders take up 10 px total, so the image will take up 90px by 90px */
 .puzzlepiece {
   background-image: url(background.jpg);
-	border: 5px black solid; /* 5px borders take up 10 px total, so the image will take up 90px by 90px */
-	height: 90px;
   width: 90px;
-  padding: 2px;
+  height: 90px;
+  float: left;
   text-align: center;
-}
-
-#shufflebutton {
-  display: block;
-  margin: 10px auto;
-  font-family: cursive;
+  border: 5px black solid;
+  vertical-align: middle;
+  font-size: 40px;
+  color: black;
+  line-height: 100px;
+  text-shadow: 1px 5px 10px white;
 }
 
 #one {
@@ -89,4 +84,10 @@ body p {
 }
 #sixteen {
   border: 2px solid white !important;
+}
+
+#shufflebutton {
+  display: block;
+  margin: 10px auto;
+  font-family: cursive;
 }
