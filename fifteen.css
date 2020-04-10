@@ -40,6 +40,12 @@ body p {
   font-family: cursive;
 }
 
+img {
+  margin: auto;
+  padding-top: 20px;
+
+}
+
 /* The following is to divide the image into even pieces and to display them to their corresponding puzzle piece */
 #one {
   background-position: 0 0;
