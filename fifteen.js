@@ -33,16 +33,6 @@ var movement = [
 
 var backgroundImgLink;
 
-function start() {
-  var background_id = Math.floor((Math.random() * 4));
-  backgroundImgLink = background[background_id];
-  document.getElementById(background[background_id]).selected = true;
-
-  for (var i = 0; i < id.length - 1; i++) {
-    document.getElementById(id[i]).className = "puzzlepiece " + background[background_id];
-  }
-}
-
 var shuffled = id.slice();
 function shuffle() {
   shuffled = id.slice();
@@ -70,7 +60,7 @@ function shuffle() {
       move_to = pieces + 1;
       break;
     }
-    
+
     var temp = shuffled[pieces];
     shuffled[pieces] = shuffled[move_to];
     shuffled[move_to] = temp;
@@ -84,7 +74,7 @@ function displayBoard() {
   document.getElementById("puzzlearea").innerHTML = "";
 
   for (var i = 0; i < shuffled.length; i++) {
-    if (shuffled[i] == "") {
+    if (shuffled[i] === "") {
       document.getElementById("puzzlearea").innerHTML += '<div id="sixteen" class="puzzlepiece"></div>';
     }
     else {
