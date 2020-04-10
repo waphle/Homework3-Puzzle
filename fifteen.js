@@ -1,34 +1,34 @@
 var id = [
-    "one",      "two",      "three",   "four",
-    "five",     "six",      "seven",   "eight",
-    "nine",     "ten",      "eleven",  "twelve",
-    "thirteen", "fourteen", "fifteen", ""
+  "one",      "two",      "three",   "four",
+  "five",     "six",      "seven",   "eight",
+  "nine",     "ten",      "eleven",  "twelve",
+  "thirteen", "fourteen", "fifteen", ""
 ];
 
 var id_numeric = {
-    "one":1,       "two":2,       "three":3,    "four":4,
-    "five":5,      "six":6,       "seven":7,    "eight":8,
-    "nine":9,      "ten":10,      "eleven":11,  "twelve":12,
-    "thirteen":13, "fourteen":14, "fifteen":15, "sixteen":16
+  "one":1,       "two":2,       "three":3,    "four":4,
+  "five":5,      "six":6,       "seven":7,    "eight":8,
+  "nine":9,      "ten":10,      "eleven":11,  "twelve":12,
+  "thirteen":13, "fourteen":14, "fifteen":15, "sixteen":16
 };
 
 var movement = [
-    [0, 1, 1, 0], //one
-    [0, 1, 1, 1], //two
-    [0, 1, 1, 1], //three
-    [0, 0, 1, 1], //four
-    [1, 1, 1, 0], //five
-    [1, 1, 1, 1], //six
-    [1, 1, 1, 1], //seven
-    [1, 0, 1, 1], //eight
-    [1, 1, 1, 0], //nine
-    [1, 1, 1, 1], //ten
-    [1, 1, 1, 1], //eleven
-    [1, 0, 1, 1], //twelve
-    [1, 1, 0, 0], //thirteen
-    [1, 1, 0, 1], //fourteen
-    [1, 1, 0, 1], //fifteen
-    [1, 0, 0, 1]  //sixteen
+  [0, 1, 1, 0], //one
+  [0, 1, 1, 1], //two
+  [0, 1, 1, 1], //three
+  [0, 0, 1, 1], //four
+  [1, 1, 1, 0], //five
+  [1, 1, 1, 1], //six
+  [1, 1, 1, 1], //seven
+  [1, 0, 1, 1], //eight
+  [1, 1, 1, 0], //nine
+  [1, 1, 1, 1], //ten
+  [1, 1, 1, 1], //eleven
+  [1, 0, 1, 1], //twelve
+  [1, 1, 0, 0], //thirteen
+  [1, 1, 0, 1], //fourteen
+  [1, 1, 0, 1], //fifteen
+  [1, 0, 0, 1]  //sixteen
 ];
 
 var backgroundImgLink;
